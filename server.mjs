@@ -15,7 +15,7 @@ let sharedPostCount = 0;
 // Function to fetch a random quote
 async function getRandomQuote() {
   try {
-    const response = await fetch('https://api.quotable.io/quotes');
+    const response = await fetch('https://api.quotable.io/random');
     const data = await response.json();
 
     if (response.ok) {
